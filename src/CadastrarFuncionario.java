@@ -3,7 +3,7 @@ import java.util.Scanner;
 
 public class CadastrarFuncionario {
 
-    public static void executar(Scanner scanner, List<Funcionario> funcionarios, List<Departamento> departamentos) {
+    public static void Cadastrar(Scanner scanner, List<Funcionario> funcionarios, List<Departamento> departamentos) {
 
         System.out.print("Digite a matrícula: ");
         String matricula = scanner.nextLine();

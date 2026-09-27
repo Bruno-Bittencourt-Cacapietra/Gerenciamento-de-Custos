@@ -48,14 +48,9 @@ public class App {
                     
                 case 2:
                     System.out.println("\n--- Cadastrar Funcionário ---");
-                    /*
-                     * TODO: Tarefa 4
-                     * 1. Pedir ao utilizador a matrícula e o nome.
-                     * 2. Listar os departamentos disponíveis percorrendo a lista 'departamentos'.
-                     * 3. Pedir para o utilizador escolher o departamento e validar se a escolha é válida.
-                     * 4. Criar um 'new Funcionario(nome, matricula, departamentoEscolhido)'.
-                     * 5. Adicionar à lista 'funcionarios' usando 'funcionarios.add()'.
-                     */
+                    
+                    CadastrarFuncionario.Cadastrar(scanner, funcionarios, departamentos);
+                    
                     System.out.println("Funcionalidade em desenvolvimento...");
                     break;
                     
