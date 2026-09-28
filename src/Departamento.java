@@ -1,6 +1,7 @@
 /**
  * Representa os setores da empresa pré-cadastrados no sistema para vincular aos custos e funcionários.
  */
+
 public class Departamento{
     private String nome;
     
