@@ -1,6 +1,4 @@
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Scanner;
+import java.util.*;
 
 public class App {
     // Listas globais para armazenar os dados e partilhar entre as opções do menu
@@ -48,14 +46,9 @@ public class App {
                     
                 case 2:
                     System.out.println("\n--- Cadastrar Funcionário ---");
-                    /*
-                     * TODO: Tarefa 4
-                     * 1. Pedir ao utilizador a matrícula e o nome.
-                     * 2. Listar os departamentos disponíveis percorrendo a lista 'departamentos'.
-                     * 3. Pedir para o utilizador escolher o departamento e validar se a escolha é válida.
-                     * 4. Criar um 'new Funcionario(nome, matricula, departamentoEscolhido)'.
-                     * 5. Adicionar à lista 'funcionarios' usando 'funcionarios.add()'.
-                     */
+                    
+                    CadastrarFuncionario.Cadastrar(scanner, funcionarios, departamentos);
+                    
                     System.out.println("Funcionalidade em desenvolvimento...");
                     break;
                     
@@ -103,6 +96,41 @@ public class App {
                      */
                     System.out.println("Funcionalidade em desenvolvimento...");
                     break;
+
+                /* Criei esse case apenas pra testar as validações da classe ValidacaoCusto, deve ser removido
+                 * antes de entregar o projeto final
+                 */ 
+                case 7:
+                    System.out.println("\n--- Teste das Validações ---");
+
+                    System.out.println("Valor 200: " +
+                            ValidacaoCusto.validarValor(200));
+
+                    System.out.println("Valor -80: " +
+                            ValidacaoCusto.validarValor(-80));
+
+                    System.out.println("Data 28/09/2026: " +
+                            ValidacaoCusto.validarData(28, 9, 2026));
+
+                    System.out.println("Data 30/02/2026: " +
+                            ValidacaoCusto.validarData(30, 2, 2026));
+
+                    System.out.println("Categoria válida: " +
+                            ValidacaoCusto.validarCategoria(Categoria.OUTROS_SERVICOS));
+
+                    System.out.println("Categoria nula: " +
+                            ValidacaoCusto.validarCategoria(null));
+
+                    Departamento departamentoTeste = departamentos.get(0);
+
+                    System.out.println("Departamento existente: " +
+                            ValidacaoCusto.validarDepartamento(departamentoTeste, departamentos));
+
+                    Departamento departamentoInexistente = new Departamento("Marketing");
+
+                    System.out.println("Departamento inexistente: " +
+                            ValidacaoCusto.validarDepartamento(departamentoInexistente, departamentos));
+                    break;
                     
                 case 0:
                     System.out.println("\nA sair do sistema... Até logo!");
@@ -129,6 +157,8 @@ public class App {
         System.out.println("4. Pesquisar custos");
         System.out.println("5. Excluir custo mais recente");
         System.out.println("6. Exibir painel de indicadores");
+        //Criei a opção 7 para testar as validações
+        System.out.println("7. Testar validações");
         System.out.println("0. Sair");
         System.out.println("=========================================");
     }
