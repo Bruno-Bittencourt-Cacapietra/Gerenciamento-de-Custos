@@ -8,7 +8,7 @@ public class App {
     private static List<Custo> custos = new ArrayList<>();
     private static List<Departamento> departamentos = new ArrayList<>();
     private static Funcionario operadorAtual = null; 
-
+   
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         int opcao = -1;
@@ -89,14 +89,10 @@ public class App {
                     
                 case 6:
                     System.out.println("\n--- Painel de Indicadores ---");
-                    /*
-                     * TODO: Tarefas 9 e 10
-                     * 1. Mostrar o 'operadorAtual.getNome()'.
-                     * 2. Somar e mostrar o valor de todos os 'custos' do mês atual.
-                     * 3. Calcular e mostrar os totais dos últimos 3 meses filtrando por departamento.
-                     * 4. Agrupar os custos por funcionário e encontrar o top 3 maiores gastadores.
-                     */
-                    System.out.println("Funcionalidade em desenvolvimento...");
+                    Painel painel = new Painel(operadorAtual, custos);
+                    painel.exibirPainel();
+   
+                  
                     break;
                     
                 case 0:
