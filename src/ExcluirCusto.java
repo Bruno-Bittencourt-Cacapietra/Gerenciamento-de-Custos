@@ -1,16 +1,10 @@
-import java.util.List;
+/**
+* Tarefa 8: Apaga só o último item da lista e impede apagar qualquer outro.
+*/
 
-
+import java.util.*;
 
 public class ExcluirCusto {
-
-
-
-    /**
-
-     * Tarefa 8: Apaga só o último item da lista e impede apagar qualquer outro.
-
-     */
 
     public static void executar(List<Custo> listaCustos) {
 
