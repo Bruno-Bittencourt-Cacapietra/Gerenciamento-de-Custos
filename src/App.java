@@ -77,6 +77,7 @@ public class App {
                      * 4. Fazer 'if' verificando se o custo atual bate com o filtro escolhido.
                      * 5. Exibir os resultados.
                      */
+                    PesquisarCustos.pesquisa(custos, scanner);
                     System.out.println("Funcionalidade em desenvolvimento...");
                     break;
                     
