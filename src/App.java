@@ -64,7 +64,7 @@ public class App {
                      * 6. Criar um 'new Custo(...)' passando o 'operadorAtual'.
                      * 7. Adicionar o custo gerado à lista 'custos'.
                      */
-                    System.out.println("Funcionalidade em desenvolvimento...");
+                    RegistrarCusto.executar(scanner, custos, departamentos, operadorAtual);
                     break;
                     
                 case 4:
