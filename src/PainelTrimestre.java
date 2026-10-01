@@ -31,7 +31,7 @@ public class PainelTrimestre {
             int mesCusto = custo.getMes();
             int cmesCusto = anoCusto * 12 + mesCusto;
 
-            if (cmesAtual - cmesCusto >= 0 && cmesAtual - cmesCusto <= 2) { // Verifica se é dos ultimos 3 meses
+            if (cmesAtual - cmesCusto >= 1 && cmesAtual - cmesCusto <= 3) { // Verifica se é dos ultimos 3 meses sem contar o mês atual
 
                 String departamentoNome = custo.getDepartamento().getNome();
                 double valor = custo.getValor();
