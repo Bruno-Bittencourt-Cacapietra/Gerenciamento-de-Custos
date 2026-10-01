@@ -2,10 +2,11 @@
  * Classe central de registros de custos da empresa.
  * Concentra os relacionamentos com Funcionario, Departamento e Categoria.
  */
+
 public class Custo {
     private double valor;
     private String descricao;
-    // Data simplificada com tipos primitivos para facilitar consulta de estatísticas por mẽs
+    // Data simplificada com tipos primitivos para facilitar consulta de estatísticas por mês
     private int dia;
     private int mes;
     private int ano;
