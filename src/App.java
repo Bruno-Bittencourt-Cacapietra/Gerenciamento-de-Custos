@@ -91,7 +91,8 @@ public class App {
                     Painel painel = new Painel(operadorAtual, custos);
                     painel.exibirPainel();
    
-                  
+                  PainelTrimestre.exibirPainel(custos);
+                  FuncionariosCustos.funcionariosMaioresCustos(custos);
                     break;
 
                 /* Criei esse case apenas pra testar as validações da classe ValidacaoCusto, deve ser removido
