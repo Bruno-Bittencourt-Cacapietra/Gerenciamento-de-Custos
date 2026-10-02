@@ -53,7 +53,7 @@ public class PainelTrimestre {
             String departamento = entry.getKey();
             double total = entry.getValue();
 
-            System.out.println("Departamento: " + departamento + " | Total dos últimos 3 meses: R$ " + String.format("%.2f", total));
+            System.out.println("Departamento: " + departamento + " | Total dos últimos 3 meses: R$ " + String.format(new Locale("pt", "BR"), "%,.2f", total));
 
         }
     }
