@@ -34,14 +34,10 @@ public class App {
             switch (opcao) {
                 case 1:
                     System.out.println("\n--- Trocar Operador ---");
-                    /*
-                     * TODO: Tarefa 3
-                     * 1. Verificar se a lista 'funcionarios' está vazia. Se estiver, avisar e dar 'break'.
-                     * 2. Fazer um 'for' para listar os funcionários cadastrados (mostrando o índice).
-                     * 3. Pedir ao utilizador para digitar o número correspondente ao funcionário.
-                     * 4. Atribuir o funcionário escolhido à variável 'operadorAtual'.
-                     */
-                    System.out.println("Funcionalidade em desenvolvimento...");
+
+                    Sistema trocarOperador = new Sistema(funcionarios, scanner);
+                    trocarOperador.trocarOperador();
+                    operadorAtual = trocarOperador.getOperadorAtual();
                     break;
                     
                 case 2:
