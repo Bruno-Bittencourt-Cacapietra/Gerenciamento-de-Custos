@@ -65,16 +65,7 @@ public class App {
                     
                 case 4:
                     System.out.println("\n--- Pesquisar Custos ---");
-                    /*
-                     * TODO: Tarefa 7
-                     * 1. Exibir um sub-menu perguntando qual o filtro (descrição, categoria, data ou departamento).
-                     * 2. Capturar o termo a ser pesquisado.
-                     * 3. Percorrer a lista 'custos' num 'for'.
-                     * 4. Fazer 'if' verificando se o custo atual bate com o filtro escolhido.
-                     * 5. Exibir os resultados.
-                     */
                     PesquisarCustos.pesquisa(custos, scanner);
-                    System.out.println("Funcionalidade em desenvolvimento...");
                     break;
                     
                 case 5:
