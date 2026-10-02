@@ -48,10 +48,7 @@ public class App {
                     
                 case 2:
                     System.out.println("\n--- Cadastrar Funcionário ---");
-                    
                     CadastrarFuncionario.Cadastrar(scanner, funcionarios, departamentos);
-                    
-                    System.out.println("Funcionalidade em desenvolvimento...");
                     break;
                     
                 case 3:
