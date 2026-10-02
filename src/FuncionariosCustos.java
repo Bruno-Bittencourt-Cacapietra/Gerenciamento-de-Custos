@@ -28,9 +28,9 @@ public class FuncionariosCustos {
         String top2 = "";
         String top3 = "";
 
-        double primeiro = 0;
-        double segundo = 0;
-        double terceiro = 0;
+        double primeiro = -1;
+        double segundo = -1;
+        double terceiro = -1;
 
         for (String funcionario : totalPorFuncionario.keySet()) {
             double total = totalPorFuncionario.get(funcionario);
