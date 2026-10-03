@@ -10,12 +10,12 @@ O sistema baseia-se em um menu interativo com as seguintes opções:
 
 - **Trocar Operador:** Permite selecionar qual funcionário cadastrado está operando o sistema no momento. Nenhum custo pode ser registrado sem um operador logado.
 - **Cadastrar Funcionário:** Cria novos usuários no sistema associando-os a uma matrícula e a um departamento específico.
-- **Registrar Novo Custo:** Registra uma nova despesa contendo valor, descrição, data, categoria e o departamento responsável. Inclui validações rigorosas (ex: impede valores negativos e datas inexistentes).
+- **Registrar Custo:** Registra uma nova despesa contendo valor, descrição, data, categoria e o departamento responsável. Inclui validações rigorosas (ex: impede valores negativos e datas inexistentes).
+- **Pesquisar Custos**: Permitirá filtrar despesas por descrição, categoria, data ou departamento.
 - **Excluir Custo Mais Recente:** Remove apenas o último custo inserido no sistema, funcionando como uma opção de "Desfazer".
-- **Pesquisar Custos** *(Em desenvolvimento)*: Permitirá filtrar despesas por descrição, categoria, data ou departamento.
-- **Painel de Indicadores** *(Em desenvolvimento)*: Exibirá estatísticas financeiras, como total gasto no mês, top 3 funcionários com maiores gastos e histórico dos últimos meses.
+- **Painel de Indicadores**: Exibirá estatísticas financeiras, como total gasto no mês, top 3 funcionários com maiores gastos e histórico dos últimos meses.
 
-## Tecnologias Utilizadas
+## Tecnologias Utilizadas e Pré-Requisitos
 
 - **Linguagem:** Java (JDK 8 ou superior, devido ao uso do pacote `java.time`).
 - **Bibliotecas padrão:** `java.util.*` (List, ArrayList, Scanner) e `java.time.*` (LocalDate para validação de datas).
