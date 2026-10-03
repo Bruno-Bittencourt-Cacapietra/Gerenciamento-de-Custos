@@ -28,9 +28,9 @@ public class FuncionariosCustos {
         String top2 = "";
         String top3 = "";
 
-        double primeiro = 0;
-        double segundo = 0;
-        double terceiro = 0;
+        double primeiro = -1;
+        double segundo = -1;
+        double terceiro = -1;
 
         for (String funcionario : totalPorFuncionario.keySet()) {
             double total = totalPorFuncionario.get(funcionario);
@@ -59,14 +59,14 @@ public class FuncionariosCustos {
         if (top1.isEmpty() && top2.isEmpty() && top3.isEmpty()) {
             System.out.println("\n[INFO] Não existem custos registrados para exibir.");
             } else {
-            System.out.println("1. " + top1 + " - R$ " + String.format("%.2f", primeiro));
+            System.out.println("1. " + top1 + " - R$ " + String.format(new Locale("pt", "BR"), "%,.2f", primeiro));
         
             if (!top2.isEmpty()) {    
-            System.out.println("2. " + top2 + " - R$ " + String.format("%.2f", segundo));
+            System.out.println("2. " + top2 + " - R$ " + String.format(new Locale("pt", "BR"), "%,.2f", segundo));
             }
         
             if (!top3.isEmpty()) {
-            System.out.println("3. " + top3 + " - R$ " + String.format("%.2f", terceiro));
+            System.out.println("3. " + top3 + " - R$ " + String.format(new Locale("pt", "BR"), "%,.2f", terceiro));
             }
         }
     }
